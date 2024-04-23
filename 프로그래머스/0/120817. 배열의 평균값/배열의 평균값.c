@@ -8,5 +8,5 @@ double solution(int numbers[], size_t numbers_len) {
     for(int i = 0; i < numbers_len; i++){
         answer += numbers[i];
     }
-    return answer /= numbers_len;
+    return answer/numbers_len;
 }
