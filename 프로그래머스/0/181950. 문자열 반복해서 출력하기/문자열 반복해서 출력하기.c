@@ -5,9 +5,8 @@ int main(void) {
     char s1[LEN_INPUT];
     int a;
     scanf("%s %d", s1, &a);
-    while(a){
+    for(int i = 0; i < a; i++){
         printf("%s", s1);
-        a--;
     }
     return 0;
 }
