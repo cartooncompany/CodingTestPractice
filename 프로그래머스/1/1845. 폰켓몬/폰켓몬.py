@@ -1,10 +1,10 @@
 def solution(nums):
-    hash_set = set()
+    hash_poke = set()
     
-    for pokemon in nums:
-        hash_set.add(hash(pokemon))
+    for i in nums:
+        hash_poke.add(hash(i))
+        
+    pokeList = len(hash_poke)
+    listLength = len(nums) // 2
     
-    unique_count = len(hash_set)
-    max_selectable = len(nums) // 2
-    
-    return min(unique_count, max_selectable)
+    return min(pokeList, listLength)
