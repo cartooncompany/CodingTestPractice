@@ -1,13 +1,12 @@
 N, K = map(int, input().split())
 
-coins = []
+money = []
 for i in range(N):
-    coins.append(int(input()))
-coins.sort(reverse=True)
+    money.append(int(input()))
+money.sort(reverse=True)
 
 count = 0
-
-for i in coins:
+for i in money:
     if K == 0:
         break
     count += K//i
