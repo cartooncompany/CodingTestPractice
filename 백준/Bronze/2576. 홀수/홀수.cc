@@ -16,11 +16,8 @@ int main(){
             if(a<min) min = a;
         }
     }
-    if(count==0) {
-        cout << "-1";
-    } else {
-        cout << count << '\n' << min;
-    }
+    if(count==0)cout << "-1"; 
+    else cout << count << '\n' << min;
     
     return 0;
 }
